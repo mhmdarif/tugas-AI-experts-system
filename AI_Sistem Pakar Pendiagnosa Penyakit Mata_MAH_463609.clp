@@ -293,13 +293,13 @@
  " > kemungkinan besar anda mengidap penyakit mata Blefaritis nonUlserativa 99.9% " crlf
  "   segera hubungi dokter untuk langkah lebih lanjut" crlf crlf))
 
-;------------------D4 F------------------
+;------------------D5 F------------------
  (defrule disease-blefaritis-nonulserativa-false
  (start 5)
  (or(symptom-skwama ~yes)
     (symptom-tak-tampak-krusta ~yes) 
     (symptom-bulu-mata-jatuh-tumbuh ~yes)
-    (symptom-mata-kepala ~yes)
+    (symptom-ketombe-kepala ~yes)
     (symptom-ketombe-mata-telinga ~yes))
  =>
  (printout t crlf crlf crlf 
